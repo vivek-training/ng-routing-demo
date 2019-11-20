@@ -18,7 +18,24 @@ const routes: Routes = [
   },
   {
     path: 'topic1',
-    component: Topic1Component
+    children: [
+      {
+        path: '',
+        component: Topic1Component
+      },
+      {
+        path: ':year',
+        component: Topic1Component
+      },
+      {
+        path: ':year/:city',
+        component: Topic1Component
+      },
+      {
+        path: '**',
+        component: HomeComponent
+      }
+    ]
   },
   {
     path: 'topic2',
