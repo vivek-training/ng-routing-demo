@@ -43,5 +43,13 @@
       routerLinkActive="active"
       >Topic 1 Route Params</a
     >
+    <a
+      class="nav-item nav-link"
+      [routerLink]="['/topic3']"
+      [queryParams]="{ q: 'question', country: 'India' }"
+      [fragment]="'ThisIsTheFragment'"
+      routerLinkActive="active"
+      >Topic 3 Navigation Extras</a
+    >
   </div>
 </nav>
