@@ -46,6 +46,15 @@ const routes: Routes = [
     component: Topic3Component
   },
   {
+    path: 'finance',
+    loadChildren: () =>
+      import('./finance/finance.module').then(m => m.FinanceModule)
+  },
+  {
+    path: 'admin',
+    loadChildren: () => import('./admin/admin.module').then(m => m.AdminModule)
+  },
+  {
     path: '**',
     component: NotFoundComponent
   }
