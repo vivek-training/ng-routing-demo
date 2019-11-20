@@ -1,5 +1,5 @@
 <!-- Image and text -->
-<nav class="navbar navbar-dark bg-dark">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <a class="navbar-brand" href="#">
     <img
       src="assets/angular.png"
@@ -10,4 +10,32 @@
     />
     Routing Demo
   </a>
+
+  <div class="navbar-nav">
+    <a
+      class="nav-item nav-link"
+      [routerLink]="['/']"
+      routerLinkActive="active"
+      [routerLinkActiveOptions]="{ exact: true }"
+      >Home</a
+    >
+    <a
+      class="nav-item nav-link"
+      [routerLink]="['/topic1']"
+      routerLinkActive="active"
+      >Topic 1</a
+    >
+    <a
+      class="nav-item nav-link"
+      [routerLink]="['/topic2']"
+      routerLinkActive="active"
+      >Topic 2</a
+    >
+    <a
+      class="nav-item nav-link"
+      [routerLink]="['/topic3']"
+      routerLinkActive="active"
+      >Topic 3</a
+    >
+  </div>
 </nav>
