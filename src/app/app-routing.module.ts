@@ -5,6 +5,9 @@ import { Topic1Component } from './topic1/topic1.component';
 import { Topic2Component } from './topic2/topic2.component';
 import { Topic3Component } from './topic3/topic3.component';
 import { NotFoundComponent } from './not-found/not-found.component';
+import { AuthGuard } from './guards/auth-guard.guard';
+import { UnauthorizedComponent } from './unauthorized/unauthorized.component';
+import { PrivyComponent } from './privy/privy.component';
 
 const routes: Routes = [
   {
@@ -44,6 +47,15 @@ const routes: Routes = [
   {
     path: 'topic3',
     component: Topic3Component
+  },
+  {
+    path: 'unauthorized',
+    component: UnauthorizedComponent
+  },
+  {
+    path: 'privy',
+    component: PrivyComponent,
+    canActivate: [AuthGuard]
   },
   {
     path: 'finance',

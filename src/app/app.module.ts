@@ -9,6 +9,8 @@ import { Topic2Component } from './topic2/topic2.component';
 import { Topic3Component } from './topic3/topic3.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { HomeComponent } from './home/home.component';
+import { UnauthorizedComponent } from './unauthorized/unauthorized.component';
+import { PrivyComponent } from './privy/privy.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import { HomeComponent } from './home/home.component';
     Topic2Component,
     Topic3Component,
     NotFoundComponent,
-    HomeComponent
+    HomeComponent,
+    UnauthorizedComponent,
+    PrivyComponent
   ],
   imports: [
     BrowserModule,
