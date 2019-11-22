@@ -9,6 +9,10 @@ import { Topic2Component } from './topic2/topic2.component';
 import { Topic3Component } from './topic3/topic3.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { HomeComponent } from './home/home.component';
+import { AdminModule } from './admin/admin.module';
+import { FinanceModule } from './finance/finance.module';
+import { AdminRoutingModule } from './admin/admin-routing.module';
+import { FinanceRoutingModule } from './finance/finance-routing.module';
 
 @NgModule({
   declarations: [
@@ -20,11 +24,8 @@ import { HomeComponent } from './home/home.component';
     NotFoundComponent,
     HomeComponent
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+  imports: [BrowserModule, AppRoutingModule],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}

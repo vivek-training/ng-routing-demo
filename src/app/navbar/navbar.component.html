@@ -39,6 +39,18 @@
     >
     <a
       class="nav-item nav-link"
+      [routerLink]="['/admin']"
+      routerLinkActive="active"
+      >Admin</a
+    >
+    <a
+      class="nav-item nav-link"
+      [routerLink]="['/admin/dashboard']"
+      routerLinkActive="active"
+      >Dashboard</a
+    >
+    <a
+      class="nav-item nav-link"
       [routerLink]="['/topic1', '2019', 'Chennai']"
       routerLinkActive="active"
       >Topic 1 Route Params</a
